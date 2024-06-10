@@ -1,0 +1,15 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:RestClientsMVVM.ViewModels;assembly=RestClientsMVVM"
+             x:Class="RestClientsMVVM.Views.ClientePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Nome" Text="{Binding Cliente.Name}" />
+            <Entry Placeholder="Sobrenome" Text="{Binding Cliente.Lastname}" />
+            <Entry Placeholder="Idade" Text="{Binding Cliente.Age}" Keyboard="Numeric" />
+            <Entry Placeholder="Endereço" Text="{Binding Cliente.Address}" />
+            <Button Text="Salvar" Command="{Binding SaveCommand}" />
+            <Button Text="Cancelar" Command="{Binding CancelCommand}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

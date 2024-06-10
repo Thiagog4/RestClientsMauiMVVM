@@ -1,0 +1,20 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:RestClientsMVVM.ViewModels;assembly=RestClientsMVVM"
+             x:Class="RestClientsMVVM.Views.MainPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView ItemsSource="{Binding Clientes}"
+                      SelectedItem="{Binding SelectedCliente}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Name}" Detail="{Binding Lastname}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Adicionar Cliente" Command="{Binding AddClienteCommand}" />
+            <Button Text="Editar Cliente" Command="{Binding EditClienteCommand}" />
+            <Button Text="Excluir Cliente" Clicked="OnExcluirClienteClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
