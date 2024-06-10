@@ -49,10 +49,6 @@
   <li>SQLite</li>
 </ul>
 
-<h2>Contribuição</h2>
-
-<p>Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue para reportar bugs ou solicitar novos recursos. Se desejar contribuir com código, faça um fork do repositório, faça as alterações e envie um pull request.</p>
-
 <h2>Licença</h2>
 
 <p>Este projeto está licenciado sob a <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
